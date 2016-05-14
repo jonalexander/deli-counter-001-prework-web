@@ -2,12 +2,8 @@ katz_deli = []
 
 def line(katz_deli)
 	if katz_deli.any?
-		line_msg = "The line is currently:"
-
-		katz_deli.each_with_index do |name, i| 
-			line_msg << " #{i + 1}. #{name}"
-		end
-		
+		line_msg = "The line is currently:"l
+		katz_deli.each_with_index { |name, i| line_msg << " #{i + 1}. #{name}" }		
 		puts line_msg
 	else
 		puts "The line is currently empty."

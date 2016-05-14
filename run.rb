@@ -1,4 +1,3 @@
-
 myArray = []
 
 line(myArray)
